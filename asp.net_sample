@@ -9,7 +9,7 @@
 		<tr height=40>
 			<td align=center>						
 				<IMG height="25" src="../../res/spellcheck.png">
-                <b><asp:Label ID="lblPaperName" runat="server"></asp:Label>??答案</b>				
+                <b><asp:Label ID="lblPaperName" runat="server"></asp:Label>试题答案</b>				
 			</td>
 		</tr>				
 		<tr>
@@ -18,7 +18,7 @@
                     <Columns>
 				        <asp:TemplateField>
 				            <HeaderTemplate>				                    
-				                <asp:Label id="Label24" runat="server" Text="一、???(??"></asp:Label>
+				                <asp:Label id="Label24" runat="server" Text="一、单选题(每题"></asp:Label>
 								<asp:Label id="Label27" runat="server"></asp:Label>
                                 <asp:Label ID="Label25" runat="server" Text="分)"></asp:Label>
 				            </HeaderTemplate>
@@ -68,7 +68,7 @@
                     <Columns>
 				        <asp:TemplateField>
 				            <HeaderTemplate>				                    
-				                <asp:Label id="Label22" runat="server" Text="二、多??(??"></asp:Label>
+				                <asp:Label id="Label22" runat="server" Text="二、多选题(每题"></asp:Label>
 								<asp:Label id="Label28" runat="server"></asp:Label>
                                 <asp:Label ID="Label23" runat="server" Text="分)"></asp:Label>
 				            </HeaderTemplate>
@@ -118,7 +118,7 @@
                     <Columns>
 				        <asp:TemplateField>
 				            <HeaderTemplate>				                    
-				                <asp:Label id="Label20" runat="server" Text="三、判断?(??"></asp:Label>
+				                <asp:Label id="Label20" runat="server" Text="三、判断题(每题"></asp:Label>
 								<asp:Label id="Label29" runat="server"></asp:Label>
                                 <asp:Label ID="Label21" runat="server" Text="分)"></asp:Label>
 				            </HeaderTemplate>
@@ -132,7 +132,7 @@
 									        <asp:Label id=Label12 runat="server" Text='<%# Eval("Mark") %>' Visible="false"></asp:Label>									                
 									    </td>
 								        <td width="15%">
-									        <asp:CheckBox id="CheckBox5" runat="server" Text="正?"></asp:CheckBox>
+									        <asp:CheckBox id="CheckBox5" runat="server" Text="正确"></asp:CheckBox>
                                         </td>
 							        </tr>
 						        </table>
@@ -149,7 +149,7 @@
                     <Columns>
 				        <asp:TemplateField >
 				            <HeaderTemplate>				                    
-				                <asp:Label id="Label18" runat="server" Text="四、填空?(??"></asp:Label>
+				                <asp:Label id="Label18" runat="server" Text="四、填空题(每题"></asp:Label>
 								<asp:Label id="Label30" runat="server" ></asp:Label>
                                 <asp:Label ID="Label19" runat="server" Text="分)"></asp:Label>
 				            </HeaderTemplate>
