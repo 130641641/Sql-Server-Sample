@@ -1,0 +1,30 @@
+USE [MyOnLineExam]
+GO
+
+/****** Object:  Table [dbo].[SingleProblem]    Script Date: 2016/11/11 1:13:50 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[SingleProblem](
+	[CourseID] [int] NOT NULL,
+	[Title] [varchar](1000) NOT NULL,
+	[AnswerA] [varchar](500) NOT NULL,
+	[AnswerB] [varchar](500) NOT NULL,
+	[AnswerC] [varchar](500) NOT NULL,
+	[AnswerD] [varchar](500) NOT NULL,
+	[Answer] [varchar](2) NOT NULL,
+	[ID] [int] IDENTITY(1,1) NOT NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
