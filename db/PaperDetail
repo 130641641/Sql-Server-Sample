@@ -1,0 +1,31 @@
+USE [MyOnLineExam]
+GO
+
+/****** Object:  Table [dbo].[PaperDetail]    Script Date: 2016/11/11 1:12:42 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[PaperDetail](
+	[PaperID] [int] NOT NULL,
+	[Type] [varchar](10) NOT NULL,
+	[TitleID] [int] NOT NULL,
+	[Mark] [int] NOT NULL,
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK_PaperDetail] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
