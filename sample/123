@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            searchDB();
+        }
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    private void searchDB()
+    {
+        string strSQLSingle = "select * from PaperDetail,SingleProblem where [Type]='单选题' and PaperDetail.TitleID=SingleProblem.ID and [PaperID]= 7  order by newid()";
+        DataTable dt = (new DBase()).QueryData(strSQLSingle);
+        GridView1.DataSource = dt;
+        GridView1.DataBind();
+
+        string strSQLTanKong = "select * from PaperDetail,FillBlankProblem where [Type]='填空题' and PaperDetail.TitleID=FillBlankProblem.ID and [PaperID]= 7  order by newid()";
+        DataTable dt1 = (new DBase()).QueryData(strSQLTanKong);
+        GridView4.DataSource = dt1;
+        GridView4.DataBind();
+    }
+}
